@@ -1,0 +1,223 @@
+/* Propriétés générales */
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* ---------- Propriétés générales Header ---------- */
+
+header {
+	background-color: aqua;
+}
+
+.head-container {
+	width: 70%;
+	max-width: none;
+	margin: 0 auto;
+}
+
+.img-logo {
+	width: 200px;
+}
+
+.flex-colonne {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+nav li {
+	display: inline-block;
+	align-content: start;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.link-commande {
+	background-color: blueviolet;
+	border-radius: 5px;
+}
+
+.link-commande:hover {
+	background-color: blueviolet;
+	box-shadow: 2px 4px 10px 4px #E3CFDE;
+	border-radius: 5%;
+}
+
+nav a:hover {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 10px;
+	border: 1px solid;
+	color: aliceblue;
+	background-color: #693D65;
+	box-shadow: 2px 4px 10px 4px #E3CFDE;
+}
+
+/*---------- Propriétés Média Screen Header ----------*/
+
+@media screen and (min-width:960px) {
+	.show-on-mobile {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width:960px) {
+	.hide-on-mobile {
+		display: none !important;
+	}
+
+	.show-on-mobile {
+		display: block !important;
+	}
+
+	.head-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.img-logo {
+		width: 125px;
+	}
+
+	nav {
+		margin: 10px;
+	}
+}
+
+/* --------- Propriétés général footer ----------*/
+
+.footer-1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 75%;
+	margin: 0 auto;
+}
+
+address a{
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#footer-1{
+	background-color: darkgrey;
+}
+
+.footer-2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#footer-2{
+	background-color: #6df100;
+}
+
+/* ---------- Proprietés géneral main ----------*/
+
+main {
+	background-color: aqua;
+}
+
+/* ----------- Propriété page d'index ----------*/
+
+#nos-burgers {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
+
+.col-25 {
+	width: 25%;
+}
+
+.col-100 {
+	display: flex;
+	justify-content: center;
+	padding: 1%;
+}
+
+.card {
+	text-align: center;
+	padding: none;
+	margin: none;
+	border: none;
+}
+
+.card a {
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#t-shirt{
+	background-color: aquamarine;
+	padding-bottom: 15%;
+	line-height: 1.5rem;
+}
+
+.t-shirt-burger{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.t-shirt-burger a{
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+}
+
+figure{
+	float: right;
+}
+
+/* ---------- Propriété media screen main ---------- */
+
+@media screen and (max-width:960px) {
+	#nos-burgers {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.col-50 {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	}
+
+	.col-25 {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.col-100 {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
