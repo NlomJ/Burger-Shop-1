@@ -134,6 +134,19 @@ address a{
 	background-color: #6df100;
 }
 
+/* ---------- Propriété média screen footer ----------*/
+
+@media screen and (max-width:960px) {
+	.footer-1{
+		flex-wrap: wrap;
+	}
+
+	#footer-1{
+		padding-bottom: 5%;
+	}
+	
+}
+
 /* ---------- Proprietés géneral main ----------*/
 
 main {
