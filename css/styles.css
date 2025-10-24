@@ -349,7 +349,7 @@ fieldset a {
 	display: grid;
 	margin: 0 auto;
 	width: 100%;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 		"img5 img4"
