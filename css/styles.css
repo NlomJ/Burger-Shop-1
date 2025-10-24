@@ -103,7 +103,7 @@ nav a:hover {
 
 /* --------- Propriétés général footer ----------*/
 
-.footer-1{
+.footer-1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -111,18 +111,18 @@ nav a:hover {
 	margin: 0 auto;
 }
 
-address a{
+address a {
 	background-color: black;
 	color: antiquewhite;
 	padding: 10px;
 	text-decoration: none;
 }
 
-#footer-1{
+#footer-1 {
 	background-color: darkgrey;
 }
 
-.footer-2{
+.footer-2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -130,21 +130,21 @@ address a{
 	margin: 0 auto;
 }
 
-#footer-2{
+#footer-2 {
 	background-color: #6df100;
 }
 
 /* ---------- Propriété média screen footer ----------*/
 
 @media screen and (max-width:960px) {
-	.footer-1{
+	.footer-1 {
 		flex-wrap: wrap;
 	}
 
-	#footer-1{
+	#footer-1 {
 		padding-bottom: 5%;
 	}
-	
+
 }
 
 /* ---------- Proprietés géneral main ----------*/
@@ -155,7 +155,7 @@ main {
 
 /* ----------- Propriété page d'index ----------*/
 
-body{
+body {
 	background-color: aqua;
 }
 
@@ -189,25 +189,25 @@ body{
 	text-decoration: none;
 }
 
-#t-shirt{
+#t-shirt {
 	background-color: aquamarine;
 	padding-bottom: 15%;
 	line-height: 1.5rem;
 }
 
-.t-shirt-burger{
+.t-shirt-burger {
 	width: 75%;
 	margin: 0 auto;
 }
 
-.t-shirt-burger a{
+.t-shirt-burger a {
 	background-color: black;
 	color: antiquewhite;
 	padding: 10px;
 	text-decoration: none;
 }
 
-figure{
+figure {
 	float: right;
 }
 
@@ -241,16 +241,16 @@ figure{
 
 /* ---------- Propriété âge reservation ----------*/
 
-#formulaire{
+#formulaire {
 	background-color: aqua;
 }
 
-.container-formulaire{
+.container-formulaire {
 	width: 75%;
 	margin: 0 auto;
 }
 
-fieldset{
+fieldset {
 	display: grid;
 	flex-wrap: wrap;
 	padding: 10px;
@@ -260,10 +260,150 @@ fieldset{
 	line-height: 2rem;
 }
 
-fieldset a{
+fieldset a {
 	background-color: black;
 	color: antiquewhite;
 	padding: 10px;
 	text-decoration: none;
 	margin: 20px;
+}
+
+.confirmation {
+	width: 75%;
+	margin: 0 auto;
+
+	margin-bottom: 25%;
+}
+
+.confirmation a {
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+	border: 3px solid wheat;
+
+}
+
+.confirmation a:hover {
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+	border: 3px solid rgb(184, 120, 1);
+	background-color: rgb(156, 122, 122);
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+	box-shadow: 2px 4px 10px 4px #E3CFDE;
+}
+
+#confirmation {
+	margin-bottom: 60%;
+}
+
+@media screen and (max-width:570px) {
+	.confirmation a {
+		display: block;
+		padding: 1px;
+	}
+
+	.confirmation a:hover {
+		background-color: black;
+		color: antiquewhite;
+		padding: 1px;
+		text-decoration: none;
+		border: 3px solid rgb(184, 120, 1);
+		background-color: rgb(156, 122, 122);
+		color: antiquewhite;
+		text-decoration: none;
+		box-shadow: 2px 4px 10px 4px #E3CFDE;
+	}
+}
+
+/* ---------- Page restaurant ---------- */
+
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img3 {grid-area: img3;}
+.img4 {grid-area: img4;}
+.img5 {	grid-area: img5;}
+.img6 {	grid-area: img6;}
+
+.container-restaurant {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.mozaique {
+	display: grid;
+	margin: 0 auto;
+	width: 100%;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"img1 img2"
+		"img1 img3";
+}
+
+.mozaique-1 {
+	display: grid;
+	margin: 0 auto;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"img5 img4"
+		"img6 img4";
+}
+
+@media screen and (max-width:570px) {
+
+
+	.mozaique {
+		display: grid;
+		margin: 0 auto;
+		width: 100%;
+		border-bottom: none;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			"img1 img1"
+			"img2 img3";
+	}
+
+	.mozaique-1 {
+		display: grid;
+		margin: 0 auto;
+		width: 100%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			"img4 img4"
+			"img5 img6";
+	}
+}
+
+@media screen and (min-width:1650px) {
+	
+	.mozaique {
+		display: grid;
+		margin: 0 auto;
+		width: 100%;
+		border-bottom: none;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			"img1 img2"
+			"img3 img5";
+	}
+
+	.mozaique-1 {
+		display: grid;
+		margin: 0 auto;
+		width: 100%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			"img6 img4";
+	}
 }
