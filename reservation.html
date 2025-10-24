@@ -33,7 +33,53 @@
     </header>
 
     <main>
+        <section id="formulaire">
+            <div class="container-formulaire">
+                <h1>FORMULAIRE DE RESERVATION</h1>
+                <form>
+                    <fieldset>
+                        <legend>Information Personnelle</legend>
+                        <label for="inpNom">Votre Nom:</label>
+                        <input type="text" id="txtNom" name="txtNom">
+                        <label for="inpNom">Votre Prenom:</label>
+                        <input type="text" id="txtPrenom" name="txtPrenom">
+                        <label for="inpTel">Numéro de téléphone</label>
+                        <input type="tel" id="tel" name="tel">
+                        <label for="inpMail">Votre Adresse Mail</label>
+                        <input type="email" name="mailCompte" placeholder="xy@gmail.com">
+                    </fieldset>
 
+                    <fieldset>
+                        <legend>information de Reservation</legend>
+                        <label for="">Nombre de personne </label>
+                        <input type="number" name="nbrQte" id="nbrQte" value="1">
+                        <label>Choissisez une date de reservation</label>
+                        <input type="date" name="dateReservation">
+                        <label>Heure de reservation</label>
+                        <select>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="12:00">17:00</option>
+                            <option value="12:00">17:30</option>
+                            <option value="12:00">18:00</option>
+                            <option value="12:00">18:30</option>
+                            <option value="12:00">19:00</option>
+                            <option value="12:00">19:30</option>
+                            <option value="12:00">20:30</option>
+                            <option value="12:00">21:00</option>
+                        </select>
+                        <label>Choix du type de salle</label>
+                        <label>Salle à manger <input type="radio" name="ckbListe">   Térasse <input type="radio" name="ckbListe"></label>
+                        <label>Commentaire (facultatif)</label>
+                        <textarea name="txtMessage"></textarea>
+                        <label>Infolettre <input type="checkbox" name="chbListe"></label>
+                        <a href="confirmation.html">Soumettre le formulaire</a>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>

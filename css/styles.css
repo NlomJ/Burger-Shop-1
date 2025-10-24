@@ -155,6 +155,10 @@ main {
 
 /* ----------- Propriété page d'index ----------*/
 
+body{
+	background-color: aqua;
+}
+
 #nos-burgers {
 	width: 75%;
 	margin: 0 auto;
@@ -233,4 +237,33 @@ figure{
 		flex-wrap: wrap;
 		width: 100%;
 	}
+}
+
+/* ---------- Propriété âge reservation ----------*/
+
+#formulaire{
+	background-color: aqua;
+}
+
+.container-formulaire{
+	width: 75%;
+	margin: 0 auto;
+}
+
+fieldset{
+	display: grid;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin: 10px;
+	border: 3px solid gray;
+	border-radius: 5px;
+	line-height: 2rem;
+}
+
+fieldset a{
+	background-color: black;
+	color: antiquewhite;
+	padding: 10px;
+	text-decoration: none;
+	margin: 20px;
 }
